@@ -1,5 +1,5 @@
 CXX=g++
-LDFLAGS=
+LDFLAGS=--ignore-unknown-relocations
 # -DIL2 and -DUTF determine input/output encoding (ISO-8859-2 and UTF-8)
 CPPFLAGS=-fPIC -g -O2 --pedantic -Wall -Wextra -DIL2
 CPPFLAGS=-fPIC -g -O2 --pedantic -Wall -Wextra -DUTF
