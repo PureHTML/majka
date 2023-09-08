@@ -1,0 +1,6 @@
+majka (2.8) UNRELEASED; urgency=low
+
+  * Initial release. Closes: #nnnn
+    <nnnn is the bug number of your ITP>
+
+ -- Vítězslav Dvořák <info@vitexsoftware.cz>  Fri, 08 Sep 2023 02:58:03 +0200

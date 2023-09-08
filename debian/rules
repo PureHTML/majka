@@ -1,0 +1,33 @@
+#!/usr/bin/make -f
+# You must remove unused comment lines for the released package.
+#export DH_VERBOSE = 1
+#export DEB_BUILD_MAINT_OPTIONS = hardening=+all
+#export DEB_CFLAGS_MAINT_APPEND  = -Wall -pedantic
+#export DEB_LDFLAGS_MAINT_APPEND = -Wl,--as-needed
+
+%:
+	dh $@
+
+#override_dh_auto_install:
+#	dh_auto_install -- prefix=/usr
+
+override_dh_install:
+	mkdir -p debian/tmp
+	wget -c https://nlp.fi.muni.cz/ma/majka.w-lt -O debian/tmp/majka.w-lt
+	wget -c https://nlp.fi.muni.cz/ma/majka.l-wt -O debian/tmp/majka.l-wt
+	wget -c https://nlp.fi.muni.cz/ma/majka.lt-w -O debian/tmp/majka.lt-w
+	wget -c https://nlp.fi.muni.cz/ma/w-lt.sk.fsa -O debian/tmp/w-lt.sk.fsa
+	wget -c https://nlp.fi.muni.cz/ma/w-lt.pl.fsa -O debian/tmp/w-lt.pl.fsa
+	wget -c https://nlp.fi.muni.cz/ma/w-lt.swe.fsa -O debian/tmp/w-lt.swe.fsa 
+	wget -c https://nlp.fi.muni.cz/ma/w-lt.ger.fsa -O debian/tmp/w-lt.ger.fsa
+	wget -c https://nlp.fi.muni.cz/ma/w-lt.fr.fsa -O debian/tmp/w-lt.fr.fsa
+	wget -c https://nlp.fi.muni.cz/ma/w-lt.it.fsa -O debian/tmp/w-lt.it.fsa
+	wget -c https://nlp.fi.muni.cz/ma/w-lt.en.fsa -O debian/tmp/w-lt.en.fsa
+	wget -c https://nlp.fi.muni.cz/ma/w-lt.pt.fsa -O debian/tmp/w-lt.pt.fsa
+	wget -c https://nlp.fi.muni.cz/ma/w-lt.ca.fsa -O debian/tmp/w-lt.ca.fsa
+	wget -c https://nlp.fi.muni.cz/ma/w-lt.cy.fsa -O debian/tmp/w-lt.cy.fsa
+	wget -c https://nlp.fi.muni.cz/ma/w-lt.es.fsa -O debian/tmp/w-lt.es.fsa
+	wget -c https://nlp.fi.muni.cz/ma/w-lt.gl.fsa -O debian/tmp/w-lt.gl.fsa
+	wget -c https://nlp.fi.muni.cz/ma/w-lt.as.fsa -O debian/tmp/w-lt.as.fsa
+	wget -c https://nlp.fi.muni.cz/ma/w-lt.ru.fsa -O debian/tmp/w-lt.ru.fsa
+	dh_install
