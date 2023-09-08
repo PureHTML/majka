@@ -8,8 +8,6 @@
 %:
 	dh $@
 
-override_dh_clean:
-
 #override_dh_auto_install:
 #	dh_auto_install -- prefix=/usr
 
