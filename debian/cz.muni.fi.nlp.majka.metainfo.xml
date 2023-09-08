@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component type="console-application">
+  <id>cz.muni.fi.nlp.majka</id>
+  
+  <name>majka</name>
+  <summary> Free natural language morphology</summary>
+  
+  <metadata_license>MIT</metadata_license>
+  <project_license>GPL-2.0-only</project_license>
+  
+  <description>
+    <p>
+      A very fast (approx. 1M words per second) free morphological analyzer Majka including databases for Czech, Slovak, Polish, Swedish, German, French, Italian, English, Portuguese, Catalan, Welsh, Spanish, Galician, Asturian and Russian.
+    </p>
+  </description>
+  
+  <icon type="stock">majka</icon>
+  
+  <categories>
+    <category>Science</category>
+    <category>Languages</category>
+  </categories>
+  
+  <provides>
+    <binary>majka</binary>
+  </provides>
+</component>
