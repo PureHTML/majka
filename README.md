@@ -76,10 +76,15 @@ drwxr-xr-x 75 root root    4096 Sep  8 23:41 ..
 
 ## Author 
 
-**Pavel Šmerk, Ph.D.**
-ma@nlp.fi.muni.cz
-Natural Language Processing Centre
-Faculty of Informatics, Masaryk University
-Botanická 68a, 602 00, Brno, Czech Republic
+>  **Pavel Šmerk, Ph.D.**
+> 
+>  ma@nlp.fi.muni.cz
+> 
+>  Natural Language Processing Centre
+> 
+>  Faculty of Informatics, Masaryk University
+> 
+>  Botanická 68a, 602 00, Brno, Czech Republic
+> 
 
 [https://nlp.fi.muni.cz/ma/](https://nlp.fi.muni.cz/ma/)
